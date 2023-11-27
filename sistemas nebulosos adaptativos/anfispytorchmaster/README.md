@@ -37,7 +37,7 @@ A. Fernandez of the
 in Argentina (that URL seems a bit unstable).
 Again, their documentation is very helpful, particularly
 the "ANFIS vignette" report that comes with the distribution (I've put a
-[local copy](./Anfis-vignette.pdf) here).  It
+[local copy](Anfis-vignette.pdf) here).  It
 shows how to run the system using examples from Jang's paper, and gives
 some of the results.
 
@@ -50,24 +50,24 @@ in understanding the original R code.
 
 The ANFIS framework is mainly in three files:
 
-* [anfis.py](./anfis.py) This is where the layers of the ANFIS system
+* [anfis.py](anfis.py) This is where the layers of the ANFIS system
   are defined as Torch modules.
 
-* [membership.py](./membership.py) At the moment I only have Bell and
+* [membership.py](membership.py) At the moment I only have Bell and
   Gaussian membership functions, but any others will go in here too.
 
-* [experimental.py](./experimental.py) The experimental infrastructure
+* [experimental.py](experimental.py) The experimental infrastructure
   to train and test the FIS, and to plot some graphs etc.
 
 
 There are then some runnable examples:
 
-* [jang_examples.py](./jang_examples.py) these are four
+* [jang_examples.py](jang_examples.py) these are four
   examples from Jang's paper (based partly on the details in the
   paper, and particle on the example folders in his source code
   distribution).
 
-* [vignette_examples.py](./vignette_examples.py) these are
+* [vignette_examples.py](vignette_examples.py) these are
   three examples from the Vignette paper.  Two of these use Gaussians
   rather than Bell MFs.
 
